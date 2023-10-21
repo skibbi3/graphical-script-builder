@@ -2,8 +2,8 @@ from dash import Dash, dcc, html, callback, Output, Input, State, dash_table
 import dash_bootstrap_components as dbc
 
 # Components stored externally
-import layout
-import callbacks
+import layouts.layout as layout
+import callbacks.callbacks as callbacks
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
